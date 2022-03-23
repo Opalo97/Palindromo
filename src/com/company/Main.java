@@ -11,8 +11,11 @@ public class Main {
         System.out.println("Dame una frase: ");
         String frase = entrada.nextLine();
 
+
         for (int i = 0; i < frase.length(); i++) {
-           //hacer un if para quitar los espacios
+            if (frase.charAt(i) != ' ') {
+                fraseSinEspacios += frase.toLowerCase().charAt(i) ;
+            }
         }
 
 
